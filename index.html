@@ -493,10 +493,14 @@
             skillsTools.innerHTML = "";
             config.skills.tools.forEach((toolGroup) => {
               const li = document.createElement("li");
-              // Assuming toolGroup is an array of tools in this group
-              li.innerText = toolGroup.join(", ");
+              if (Array.isArray(toolGroup)) {
+                li.innerText = toolGroup.join(", ");
+              } else {
+                li.innerText = toolGroup; // Fallback if it's already a string
+              }
               skillsTools.appendChild(li);
             });
+
 
 
             // Education Section
