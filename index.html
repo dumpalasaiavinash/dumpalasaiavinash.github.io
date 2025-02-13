@@ -1,512 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dumpala Sai Avinash | Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <!-- Font Awesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Sai Avinash</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
-          <li class="nav-item"><a class="nav-link" href="#podcast">Podcast</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header
-    id="hero"
-    class="hero-section d-flex align-items-center justify-content-center"
-  >
-    <div class="container text-center">
-      <h1 class="display-4">Dumpala Sai Avinash</h1>
-      <p class="lead">Software Engineer | Gen AI Innovator</p>
-      <a href="Sai Avinash.pdf" class="btn btn-primary btn-lg" download
-        >Download Resume</a
-      >
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">About Me</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <!-- Replace "profile.jpg" with a smaller image or different photo if needed -->
-          <img
-            src="profile.jpg"
-            alt="Profile Picture"
-            class="img-fluid rounded-circle mb-3"
-          />
-        </div>
-        <div class="col-md-8">
-          <p>
-            Hello! I'm Dumpala Sai Avinash, a passionate Software Engineer working on
-            cutting-edge generative AI projects. I enjoy solving complex problems
-            with innovative solutions. My background spans AI-powered chatbots,
-            intelligent IoT solutions, and leading teams on groundbreaking projects.
-          </p>
-          <p>
-            I have authored two books and produced a popular podcast, reflecting my
-            commitment to creativity and diverse interests. Please explore my portfolio
-            to learn more about my journey, skills, and accomplishments.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">Experience</h2>
-
-      <div class="timeline">
-        <!-- Tridiagonal Solutions -->
-        <div class="timeline-item">
-          <span class="timeline-date">July 2023 — Present</span>
-          <h4>Solution Architect | Tridiagonal Solutions, Pune</h4>
-          <p>
-            <strong>Avatar-based Chat using LLMs:</strong> Developed software that takes
-            user voice input, converts it to text, and responds via a real-time 3D avatar
-            service. Integrated Google Speech, Azure Speech Services, and GPT-4 for
-            domain-specific queries.<br />
-            <strong>Insyte-O (Gen AI Maintenance Management):</strong> Led a team of five
-            to build an intelligent maintenance system leveraging AWS Bedrock, Claude,
-            AWS Neptune, and more to automate maintenance requests and planning.
-          </p>
-        </div>
-
-        <!-- Youngsoft India -->
-        <div class="timeline-item">
-          <span class="timeline-date">July 2021 — July 2023</span>
-          <h4>Software Engineer | Youngsoft India Pvt. Ltd., Hyderabad</h4>
-          <p>
-            <strong>WPE (Work Posture Assessment):</strong> Implemented Python algorithms
-            using OpenCV and Numpy to calculate ergonomic scores from video inputs,
-            hosted on AWS.<br />
-            <strong>MFGIIOT (Manufacturing Intelligent IoT):</strong> Designed automation
-            solutions for real-time data collection and analytics using AWS Quicksight,
-            DynamoDB, S3, IoT Sitewise, and Ignition.
-          </p>
-        </div>
-
-        <!-- Internships -->
-        <div class="timeline-item">
-          <span class="timeline-date">2019 — 2021</span>
-          <h4>Internships</h4>
-          <p>
-            <strong>Software Engineer Intern | Youngsoft India (Jan 2021 — Jun 2021):</strong>
-            Worked on a Databricks POC for smart manufacturing and data processing.<br />
-            <strong>Software Engineer Intern | Happy Adda Studios (Sep 2019 — Apr 2020):</strong>
-            Created an educational application for government schools in Andhra Pradesh,
-            recognized by UNESCO’s TECH2019.<br />
-            <strong>Windows App Developer Intern | Skillveri (May 2019 — Jul 2019):</strong>
-            Built an inventory management system using Visual C#, MySQL, and WPF.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <!-- Avatar-based Chat -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Avatar-based Chat using LLMs</h5>
-              <p class="card-text">
-                A system integrating a real-time 3D avatar service with speech-to-text
-                conversion and GPT-4 on domain-specific data, enabling an interactive
-                conversation experience.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Insyte-O -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Insyte-O (Gen AI-based Maintenance Management)</h5>
-              <p class="card-text">
-                Led a team of five to develop an intelligent maintenance management
-                solution for automating requests, work orders, and planning in
-                manufacturing, leveraging AWS Bedrock, Claude, AWS Neptune, and more.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- WPE -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">WPE (Work Posture Assessment)</h5>
-              <p class="card-text">
-                Developed software that calculates ergonomic scores from video inputs,
-                using Python, OpenCV, and AWS to analyze angles between joints for a
-                physiotherapist-approved posture score.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- MFGIIOT -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">MFGIIOT (Manufacturing Intelligent IoT)</h5>
-              <p class="card-text">
-                Implemented real-time data collection and analytics for manufacturing
-                plants using AWS Quicksight, DynamoDB, S3, AWS IoT Sitewise, Ignition,
-                and MQTT to drive smarter shopfloor monitoring.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">Skills</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Languages</h5>
-          <ul>
-            <li>Python</li>
-            <li>C</li>
-            <li>Visual C#</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h5>Frameworks & Tools</h5>
-          <ul>
-            <li>Flask, Streamlit, Django</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>OpenAI, LLMs, OpenCV, Numpy</li>
-            <li>Databricks, Snowflake, Sklearn</li>
-            <li>AWS (Bedrock, EC2, Lambda, Quicksight, Glue, Athena, S3, IoT)</li>
-            <li>Azure Services</li>
-            <li>Git, Docker, ML Ops, WPF</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumpala Sai Avinash | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sai Avinash</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#podcast">Podcast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Education & Certifications Section -->
-  <section id="education" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Education & Certifications</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Education</h5>
-          <p>
-            <strong>Bachelor of Technology in Computer Sciences</strong><br />
-            Indian Institute of Information Technology, Sri City (2021)
-          </p>
-          <p>
-            <strong>Class XII</strong><br />
-            Sri Chaitanya Junior College, Visakhapatnam (2017)
-          </p>
-          <p>
-            <strong>Class X</strong><br />
-            Geethanjali School, Srikakulam (2015)
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h5>Certifications</h5>
-          <ul>
-            <li>Ignition 8.1 Certified - 2022</li>
-            <li>AWS QuickSight, Athena, S3 - 2021</li>
-            <li>Apache Spark 3 - Spark Programming in Python - 2021</li>
-            <li>Google IT Support Certificate - 2020</li>
-            <li>Machine Learning from Stanford Online - 2020</li>
-          </ul>
-        </div>
+    <!-- Hero Section -->
+    <header
+      id="hero"
+      class="hero-section d-flex align-items-center justify-content-center"
+    >
+      <!-- Particles Background -->
+      <div id="particles-js"></div>
+      <!-- Hero Content -->
+      <div class="hero-content container text-center">
+        <h1 class="display-4">Dumpala Sai Avinash</h1>
+        <p class="lead">Software Engineer | Gen AI Innovator</p>
+        <a href="Sai Avinash.pdf" class="btn btn-primary btn-lg" download>
+          Download Resume
+        </a>
       </div>
-    </div>
-  </section>
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <i class="fa fa-angle-down"></i>
+      </div>
+    </header>
 
-  <!-- Books Section -->
-  <section id="books" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">Books</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Facade of Shadows</h5>
-              <p class="card-text">An intriguing journey through mysterious narratives.</p>
-              <a
-                href="https://amzn.in/d/abftMCV"
-                class="btn btn-outline-primary"
-                target="_blank"
-                >View on Amazon</a
-              >
-            </div>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">About Me</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="profile.jpg"
+              alt="Profile Picture"
+              class="img-fluid rounded-circle mb-3"
+            />
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">The Tapestry of Life</h5>
-              <p class="card-text">
-                Explore the intricate patterns of life through storytelling.
-              </p>
-              <a
-                href="https://amzn.in/d/4WaZWIl"
-                class="btn btn-outline-primary"
-                target="_blank"
-                >View on Amazon</a
-              >
-            </div>
+          <div class="col-md-8">
+            <p>
+              Hello! I'm Dumpala Sai Avinash, a passionate Software Engineer working
+              on cutting-edge generative AI projects. I enjoy solving complex
+              problems with innovative solutions. My background spans AI-powered
+              chatbots, intelligent IoT solutions, and leading teams on
+              groundbreaking projects.
+            </p>
+            <p>
+              I have authored two books and produced a popular podcast, reflecting
+              my commitment to creativity and diverse interests. Please explore my
+              portfolio to learn more about my journey, skills, and accomplishments.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Podcast Section -->
-  <section id="podcast" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Podcast</h2>
-      <div class="card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Chandamama Kathalu Telugu</h5>
-          <p class="card-text">
-            I produced this popular podcast, available on all major platforms.
-          </p>
-          <a
-            href="https://open.spotify.com/show/3msJFxPAowJuoBfxfaqXQj?si=4373b752cff545ef"
-            class="btn btn-success"
-            target="_blank"
-            >Listen on Spotify</a
-          >
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Experience</h2>
+        <div class="timeline">
+          <!-- Tridiagonal Solutions -->
+          <div class="timeline-item">
+            <span class="timeline-date">July 2023 — Present</span>
+            <h4>Solution Architect | Tridiagonal Solutions, Pune</h4>
+            <p>
+              <strong>Avatar-based Chat using LLMs:</strong> Developed software that takes
+              user voice input, converts it to text, and responds via a real-time 3D avatar
+              service. Integrated Google Speech, Azure Speech Services, and GPT-4 for
+              domain-specific queries.<br />
+              <strong>Insyte-O (Gen AI Maintenance Management):</strong> Led a team of five
+              to build an intelligent maintenance system leveraging AWS Bedrock, Claude,
+              AWS Neptune, and more to automate maintenance requests and planning.
+            </p>
+          </div>
+
+          <!-- Youngsoft India -->
+          <div class="timeline-item">
+            <span class="timeline-date">July 2021 — July 2023</span>
+            <h4>Software Engineer | Youngsoft India Pvt. Ltd., Hyderabad</h4>
+            <p>
+              <strong>WPE (Work Posture Assessment):</strong> Implemented Python algorithms
+              using OpenCV and Numpy to calculate ergonomic scores from video inputs,
+              hosted on AWS.<br />
+              <strong>MFGIIOT (Manufacturing Intelligent IoT):</strong> Designed automation
+              solutions for real-time data collection and analytics using AWS Quicksight,
+              DynamoDB, S3, IoT Sitewise, and Ignition.
+            </p>
+          </div>
+
+          <!-- Internships -->
+          <div class="timeline-item">
+            <span class="timeline-date">2019 — 2021</span>
+            <h4>Internships</h4>
+            <p>
+              <strong>Software Engineer Intern | Youngsoft India (Jan 2021 — Jun 2021):</strong>
+              Worked on a Databricks POC for smart manufacturing and data processing.<br />
+              <strong>Software Engineer Intern | Happy Adda Studios (Sep 2019 — Apr 2020):</strong>
+              Created an educational application for government schools in Andhra Pradesh,
+              recognized by UNESCO’s TECH2019.<br />
+              <strong>Windows App Developer Intern | Skillveri (May 2019 — Jul 2019):</strong>
+              Built an inventory management system using Visual C#, MySQL, and WPF.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">Contact Me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:dumpalasaiavinash@gmail.com"
-              >dumpalasaiavinash@gmail.com</a
-            >
-          </p>
-          <p>
-            <i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India
-          </p>
-          <p>
-            <i class="fa-brands fa-linkedin"></i>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- Avatar-based Chat -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Avatar-based Chat using LLMs</h5>
+                <p class="card-text">
+                  A system integrating a real-time 3D avatar service with speech-to-text
+                  conversion and GPT-4 on domain-specific data, enabling an interactive
+                  conversation experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Insyte-O -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Insyte-O (Gen AI-based Maintenance Management)
+                </h5>
+                <p class="card-text">
+                  Led a team of five to develop an intelligent maintenance management
+                  solution for automating requests, work orders, and planning in
+                  manufacturing, leveraging AWS Bedrock, Claude, AWS Neptune, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- WPE -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">WPE (Work Posture Assessment)</h5>
+                <p class="card-text">
+                  Developed software that calculates ergonomic scores from video inputs,
+                  using Python, OpenCV, and AWS to analyze angles between joints for a
+                  physiotherapist-approved posture score.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- MFGIIOT -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">MFGIIOT (Manufacturing Intelligent IoT)</h5>
+                <p class="card-text">
+                  Implemented real-time data collection and analytics for manufacturing
+                  plants using AWS Quicksight, DynamoDB, S3, AWS IoT Sitewise, Ignition,
+                  and MQTT to drive smarter shopfloor monitoring.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Skills</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Languages</h5>
+            <ul>
+              <li>Python</li>
+              <li>C</li>
+              <li>Visual C#</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Frameworks & Tools</h5>
+            <ul>
+              <li>Flask, Streamlit, Django</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>OpenAI, LLMs, OpenCV, Numpy</li>
+              <li>Databricks, Snowflake, Sklearn</li>
+              <li>
+                AWS (Bedrock, EC2, Lambda, Quicksight, Glue, Athena, S3, IoT)
+              </li>
+              <li>Azure Services</li>
+              <li>Git, Docker, ML Ops, WPF</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Education & Certifications</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Education</h5>
+            <p>
+              <strong>Bachelor of Technology in Computer Sciences</strong><br />
+              Indian Institute of Information Technology, Sri City (2021)
+            </p>
+            <p>
+              <strong>Class XII</strong><br />
+              Sri Chaitanya Junior College, Visakhapatnam (2017)
+            </p>
+            <p>
+              <strong>Class X</strong><br />
+              Geethanjali School, Srikakulam (2015)
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h5>Certifications</h5>
+            <ul>
+              <li>Ignition 8.1 Certified - 2022</li>
+              <li>AWS QuickSight, Athena, S3 - 2021</li>
+              <li>
+                Apache Spark 3 - Spark Programming in Python - 2021
+              </li>
+              <li>Google IT Support Certificate - 2020</li>
+              <li>Machine Learning from Stanford Online - 2020</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Books</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Facade of Shadows</h5>
+                <p class="card-text">
+                  An intriguing journey through mysterious narratives.
+                </p>
+                <a
+                  href="https://amzn.in/d/abftMCV"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >View on Amazon</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">The Tapestry of Life</h5>
+                <p class="card-text">
+                  Explore the intricate patterns of life through storytelling.
+                </p>
+                <a
+                  href="https://amzn.in/d/4WaZWIl"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >View on Amazon</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podcast Section -->
+    <section id="podcast" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Podcast</h2>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chandamama Kathalu Telugu</h5>
+            <p class="card-text">
+              I produced this popular podcast, available on all major platforms.
+            </p>
             <a
-              href="https://www.linkedin.com/in/dumpala-saiavinash/"
+              href="https://open.spotify.com/show/3msJFxPAowJuoBfxfaqXQj?si=4373b752cff545ef"
+              class="btn btn-success"
               target="_blank"
-              >LinkedIn Profile</a
+              >Listen on Spotify</a
             >
-          </p>
-          <p class="text-muted">
-            *The form on the right is for demonstration only; it does not currently send
-            messages.*
-          </p>
-        </div>
-        <div class="col-md-6">
-          <!--  form - with web3 forms integration -->
-          <!-- <form action="https://api.web3forms.com/submit" method="POST">
-            
-            <input type="hidden" name="access_key" value="1fd46f0f-9c72-4872-b1d3-1c413f666c8e"> 
-          
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-          
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-          
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
-          
-            <button type="submit" class="btn btn-primary">
-              Send Message
-            </button>
-          </form> -->
-
-<!-- form with ajax implementation to not redirect the user to web3 forms -->
-          <form id="contactForm">
-            <input type="hidden" name="access_key" value="1fd46f0f-9c72-4872-b1d3-1c413f666c8e"> 
-          
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-          
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-          
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
-          
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-          
-          <!-- Success Message -->
-          <div id="formResponse" style="display:none; color: green; font-weight: bold;">
-            Thank you! Your message has been sent.
           </div>
-          
-          <script>
-            document.getElementById("contactForm").addEventListener("submit", async function(e) {
-              e.preventDefault();
-          
-              const form = e.target;
-              const formData = new FormData(form);
-          
-              try {
-                const response = await fetch("https://api.web3forms.com/submit", {
-                  method: "POST",
-                  body: formData
-                });
-          
-                const result = await response.json();
-                if (result.success) {
-                  document.getElementById("formResponse").style.display = "block";
-                  form.reset();
-                } else {
-                  alert("Form submission failed. Please try again.");
-                }
-              } catch (error) {
-                alert("An error occurred. Please try again.");
-                console.error(error);
-              }
-            });
-          </script>
-
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="py-4 bg-dark text-white text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Dumpala Sai Avinash. All Rights Reserved.</p>
-      <div class="social-links">
-        <a
-          href="https://github.com/dumpalasaiavinash"
-          class="text-white me-2"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/dumpala-saiavinash/"
-          class="text-white"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Contact Me</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:dumpalasaiavinash@gmail.com"
+                >dumpalasaiavinash@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India
+            </p>
+            <p>
+              <i class="fa-brands fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/dumpala-saiavinash/"
+                target="_blank"
+                >LinkedIn Profile</a
+              >
+            </p>
+            <p class="text-muted">
+              *The form on the right is for demonstration only; it does not currently
+              send messages.*
+            </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Form with AJAX implementation -->
+            <form id="contactForm">
+              <input
+                type="hidden"
+                name="access_key"
+                value="1fd46f0f-9c72-4872-b1d3-1c413f666c8e"
+              />
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+            <!-- Success Message -->
+            <div
+              id="formResponse"
+              style="display:none; color: green; font-weight: bold;"
+            >
+              Thank you! Your message has been sent.
+            </div>
+            <script>
+              document
+                .getElementById("contactForm")
+                .addEventListener("submit", async function (e) {
+                  e.preventDefault();
+                  const form = e.target;
+                  const formData = new FormData(form);
+                  try {
+                    const response = await fetch(
+                      "https://api.web3forms.com/submit",
+                      {
+                        method: "POST",
+                        body: formData,
+                      }
+                    );
+                    const result = await response.json();
+                    if (result.success) {
+                      document.getElementById("formResponse").style.display =
+                        "block";
+                      form.reset();
+                    } else {
+                      alert("Form submission failed. Please try again.");
+                    }
+                  } catch (error) {
+                    alert("An error occurred. Please try again.");
+                    console.error(error);
+                  }
+                });
+            </script>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Bootstrap JS Bundle -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
-</body>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Dumpala Sai Avinash. All Rights Reserved.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://github.com/dumpalasaiavinash"
+            class="text-white me-2"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dumpala-saiavinash/"
+            class="text-white"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Particles.js Configuration -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
 </html>
