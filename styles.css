@@ -6,36 +6,28 @@ body {
   padding: 0;
 }
 
-/* Fix for overlapping navbar */
+/* Navbar on top */
 .navbar {
   z-index: 999;
 }
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-              url('profile.jpg') center center/cover no-repeat;
-  /* Use min-height to ensure it expands to full view height 
-     without cutting off content behind navbar */
-  min-height: 100vh;
+  /* Removed background image to avoid it repeating everywhere */
+  background: #343a40; /* A simple dark background color */
   color: #fff;
-  /* Extra top padding to avoid overlap from fixed navbar */
-  padding-top: 8rem;
+  min-height: 100vh;
+  padding-top: 5rem; /* Extra top padding to avoid overlap with fixed navbar */
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
-}
-
-/* Adjust heading spacing on smaller screens */
-@media (max-width: 576px) {
-  .hero-section {
-    padding-top: 10rem;
-  }
 }
 
 .hero-section h1 {
   font-size: 3.5rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .hero-section p.lead {
@@ -49,7 +41,7 @@ section {
   padding-bottom: 60px;
 }
 
-/* Timeline for Experience */
+/* Timeline for Experience (if you choose to keep it) */
 .timeline {
   border-left: 3px solid #ddd;
   padding-left: 20px;
@@ -96,8 +88,8 @@ footer .social-links a {
   margin: 0 10px;
 }
 
-/* Responsiveness for headings */
-@media (max-width: 768px) {
+/* Responsive Adjustments */
+@media (max-width: 576px) {
   .hero-section h1 {
     font-size: 2.5rem;
   }
