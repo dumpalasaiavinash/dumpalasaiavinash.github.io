@@ -10,7 +10,7 @@ body {
 .modern-header {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: background 1s ease, box-shadow 1s ease;
   z-index: 999;
 }
 
