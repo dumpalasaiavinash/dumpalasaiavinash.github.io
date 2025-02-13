@@ -358,35 +358,45 @@
         <div class="col-md-6">
           <!-- Static/Decorative form - No backend integration -->
           <form action="https://api.web3forms.com/submit" method="POST">
-             <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="1fd46f0f-9c72-4872-b1d3-1c413f666c8e">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="1fd46f0f-9c72-4872-b1d3-1c413f666c8e"> 
+          
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control"
                 id="name"
+                name="name"
                 placeholder="Your Name"
+                required
               />
             </div>
+          
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
+                name="email"
                 placeholder="Your Email"
+                required
               />
             </div>
+          
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea
                 class="form-control"
                 id="message"
+                name="message"
                 rows="4"
                 placeholder="Your Message"
+                required
               ></textarea>
             </div>
+          
             <button type="submit" class="btn btn-primary">
               Send Message
             </button>
