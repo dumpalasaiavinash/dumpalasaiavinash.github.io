@@ -6,17 +6,9 @@ body {
   padding: 0;
 }
 
-/* Modernized Header (Navbar) */
-.modern-header {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+/* Navbar on top */
+.navbar {
   z-index: 999;
-}
-
-.modern-header.scrolled {
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Hero Section */
