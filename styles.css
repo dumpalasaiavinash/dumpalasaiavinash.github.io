@@ -11,13 +11,12 @@ body {
   z-index: 999;
 }
 
-/* Hero Section */
+/* Hero Section - simple dark background, no image */
 .hero-section {
-  /* Removed background image to avoid it repeating everywhere */
-  background: #343a40; /* A simple dark background color */
+  background-color: #343a40; /* Dark background color */
   color: #fff;
-  min-height: 100vh;
-  padding-top: 5rem; /* Extra top padding to avoid overlap with fixed navbar */
+  min-height: 80vh;
+  padding-top: 6rem; /* Extra top padding to avoid overlap with navbar */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +40,7 @@ section {
   padding-bottom: 60px;
 }
 
-/* Timeline for Experience (if you choose to keep it) */
+/* Timeline for Experience */
 .timeline {
   border-left: 3px solid #ddd;
   padding-left: 20px;
@@ -75,6 +74,13 @@ section {
   border-radius: 50%;
 }
 
+.timeline-date {
+  font-weight: bold;
+  color: #0d6efd;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
 /* Card Height */
 .card.h-100 {
   display: flex;
@@ -91,7 +97,7 @@ footer .social-links a {
 /* Responsive Adjustments */
 @media (max-width: 576px) {
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .hero-section p.lead {
     font-size: 1.2rem;
