@@ -21,7 +21,7 @@
     },
     "about": {
       "heading": "About Me",
-      "content": "Hello! I'm Dumpala Sai Avinash, a passionate Software Engineer working on cutting-edge generative AI projects. I enjoy solving complex problems with innovative solutions. My background spans AI-powered chatbots, intelligent IoT solutions, and leading teams on groundbreaking projects. I have authored two books and produced a popular podcast, reflecting my commitment to creativity and diverse interests. Please explore my portfolio to learn more about my journey, skills, and accomplishments."
+      "content": "Hello! I'm Dumpala Sai Avinash, a passionate Software Engineer dedicated to pioneering cutting-edge generative AI projects and crafting agentic AI-based solutions. I thrive on solving complex challenges with creative, innovative strategies. My background spans developing Gen AI and agentic AI systems, designing intelligent IoT solutions, and leading teams on groundbreaking initiatives. As the author of two books and producer of a popular podcast, I embody a commitment to creativity and diverse interests. Please explore my portfolio to learn more about my journey, skills, and accomplishments."
     },
     "experience": {
       "heading": "Experience",
@@ -109,12 +109,12 @@
       "items": [
         {
           "title": "Facade of Shadows",
-          "description": "An intriguing journey through mysterious narratives.",
+          "description": "Unmasking the Hidden Truths in a World of Deception",
           "amazon": "https://amzn.in/d/abftMCV"
         },
         {
           "title": "The Tapestry of Life",
-          "description": "Explore the intricate patterns of life through storytelling.",
+          "description": "Explore the intricate patterns of Evolution, Mythology, and Harmony with Nature",
           "amazon": "https://amzn.in/d/4WaZWIl"
         }
       ]
@@ -128,7 +128,7 @@
     "contact": {
       "heading": "Contact Me",
       "email": "dumpalasaiavinash@gmail.com",
-      "location": "Andhra Pradesh, India",
+      "location": "Pune, India",
       "linkedin": "https://www.linkedin.com/in/dumpala-saiavinash/",
       "github": "https://github.com/dumpalasaiavinash"
     }

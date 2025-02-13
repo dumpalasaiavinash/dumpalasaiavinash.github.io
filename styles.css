@@ -168,6 +168,22 @@ section {
   margin-bottom: 0.25rem;
 }
 
+/* Modern styling for contact links */
+#contact a {
+  color: inherit; /* Inherit the parent's text color */
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Subtle bottom border */
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+#contact a:hover,
+#contact a:focus {
+  color: #5290ec; /* Slightly lighter shade on hover */
+  border-bottom-color: currentColor; /* Underline appears using the current text color */
+}
+
+
+
 /* Card Height */
 .card.h-100 {
   display: flex;
