@@ -1,0 +1,148 @@
+{
+    "title": "Dumpala Sai Avinash | Portfolio",
+    "navbar": {
+      "brand": "Sai Avinash",
+      "links": [
+        { "text": "Home", "href": "#Home" },
+        { "text": "About", "href": "#about" },
+        { "text": "Experience", "href": "#experience" },
+        { "text": "Projects", "href": "#projects" },
+        { "text": "Skills", "href": "#skills" },
+        { "text": "Education", "href": "#education" },
+        { "text": "Books", "href": "#books" },
+        { "text": "Podcast", "href": "#podcast" },
+        { "text": "Contact", "href": "#contact" }
+      ]
+    },
+    "hero": {
+      "name": "Dumpala Sai Avinash",
+      "role": "Software Engineer | Gen AI Innovator",
+      "resume": "Sai Avinash.pdf"
+    },
+    "about": {
+      "heading": "About Me",
+      "content": "Hello! I'm Dumpala Sai Avinash, a passionate Software Engineer working on cutting-edge generative AI projects. I enjoy solving complex problems with innovative solutions. My background spans AI-powered chatbots, intelligent IoT solutions, and leading teams on groundbreaking projects. I have authored two books and produced a popular podcast, reflecting my commitment to creativity and diverse interests. Please explore my portfolio to learn more about my journey, skills, and accomplishments."
+    },
+    "experience": {
+      "heading": "Experience",
+      "items": [
+        {
+          "date": "July 2023 — Present",
+          "title": "Solution Architect | Tridiagonal Solutions, Pune",
+          "description": "Avatar-based Chat using LLMs: Developed software that takes user voice input, converts it to text, and responds via a real-time 3D avatar service. Integrated Google Speech, Azure Speech Services, and GPT-4 for domain-specific queries.<br /><br />Insyte-O (Gen AI Maintenance Management): Led a team of five to build an intelligent maintenance system leveraging AWS Bedrock, Claude, AWS Neptune, and more to automate maintenance requests and planning."
+        },
+        {
+          "date": "July 2021 — July 2023",
+          "title": "Software Engineer | Youngsoft India Pvt. Ltd., Hyderabad",
+          "description": "WPE (Work Posture Assessment): Implemented Python algorithms using OpenCV and Numpy to calculate ergonomic scores from video inputs, hosted on AWS.<br /><br />MFGIIOT (Manufacturing Intelligent IoT): Designed automation solutions for real-time data collection and analytics using AWS Quicksight, DynamoDB, S3, IoT Sitewise, and Ignition."
+        },
+        {
+          "date": "2019 — 2021",
+          "title": "Internships",
+          "description": "Software Engineer Intern at Youngsoft India (Jan 2021 — Jun 2021): Worked on a Databricks POC for smart manufacturing and data processing.<br /><br />Software Engineer Intern at Happy Adda Studios (Sep 2019 — Apr 2020): Created an educational application for government schools in Andhra Pradesh, recognized by UNESCO’s TECH2019.<br /><br />Windows App Developer Intern at Skillveri (May 2019 — Jul 2019): Built an inventory management system using Visual C#, MySQL, and WPF."
+        }
+      ]
+    },
+    "projects": {
+      "heading": "Projects",
+      "items": [
+        {
+          "title": "Avatar-based Chat using LLMs",
+          "description": "A system integrating a real-time 3D avatar service with speech-to-text conversion and GPT-4 on domain-specific data, enabling an interactive conversation experience."
+        },
+        {
+          "title": "Insyte-O (Gen AI-based Maintenance Management)",
+          "description": "Led a team of five to develop an intelligent maintenance management solution for automating requests, work orders, and planning in manufacturing, leveraging AWS Bedrock, Claude, AWS Neptune, and more."
+        },
+        {
+          "title": "WPE (Work Posture Assessment)",
+          "description": "Developed software that calculates ergonomic scores from video inputs, using Python, OpenCV, and AWS to analyze angles between joints for a physiotherapist-approved posture score."
+        },
+        {
+          "title": "MFGIIOT (Manufacturing Intelligent IoT)",
+          "description": "Implemented real-time data collection and analytics for manufacturing plants using AWS Quicksight, DynamoDB, S3, AWS IoT Sitewise, Ignition, and MQTT to drive smarter shopfloor monitoring."
+        }
+      ]
+    },
+    "skills": {
+      "heading": "Skills",
+      "languages": ["Python", "C", "Visual C#"],
+      "tools": [
+        "Flask",
+        "Streamlit",
+        "Django",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "OpenAI",
+        "LLMs",
+        "OpenCV",
+        "Numpy",
+        "Databricks",
+        "Snowflake",
+        "Sklearn",
+        "AWS",
+        "Azure Services",
+        "Git",
+        "Docker",
+        "ML Ops",
+        "WPF"
+      ]
+    },
+    "education": {
+      "heading": "Education & Certifications",
+      "education": [
+        {
+          "degree": "Bachelor of Technology in Computer Sciences",
+          "institution": "Indian Institute of Information Technology, Sri City",
+          "year": "2021"
+        },
+        {
+          "degree": "Class XII",
+          "institution": "Sri Chaitanya Junior College, Visakhapatnam",
+          "year": "2017"
+        },
+        {
+          "degree": "Class X",
+          "institution": "Geethanjali School, Srikakulam",
+          "year": "2015"
+        }
+      ],
+      "certifications": [
+        "Ignition 8.1 Certified - 2022",
+        "AWS QuickSight, Athena, S3 - 2021",
+        "Apache Spark 3 - Spark Programming in Python - 2021",
+        "Google IT Support Certificate - 2020",
+        "Machine Learning from Stanford Online - 2020"
+      ]
+    },
+    "books": {
+      "heading": "Books",
+      "items": [
+        {
+          "title": "Facade of Shadows",
+          "description": "An intriguing journey through mysterious narratives.",
+          "amazon": "https://amzn.in/d/abftMCV"
+        },
+        {
+          "title": "The Tapestry of Life",
+          "description": "Explore the intricate patterns of life through storytelling.",
+          "amazon": "https://amzn.in/d/4WaZWIl"
+        }
+      ]
+    },
+    "podcast": {
+      "heading": "Podcast",
+      "title": "Chandamama Kathalu Telugu",
+      "description": "I produced this popular podcast, available on all major platforms.",
+      "spotify": "https://open.spotify.com/show/3msJFxPAowJuoBfxfaqXQj?si=4373b752cff545ef"
+    },
+    "contact": {
+      "heading": "Contact Me",
+      "email": "dumpalasaiavinash@gmail.com",
+      "location": "Andhra Pradesh, India",
+      "linkedin": "https://www.linkedin.com/in/dumpala-saiavinash/",
+      "github": "https://github.com/dumpalasaiavinash"
+    }
+  }
+  

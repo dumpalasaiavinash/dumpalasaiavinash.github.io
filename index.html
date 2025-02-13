@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dumpala Sai Avinash | Portfolio</title>
+    <title>Portfolio</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
     <!-- Modernized Header (Navbar) -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top modern-header">
       <div class="container">
-        <a class="navbar-brand" href="#">Sai Avinash</a>
+        <a class="navbar-brand" id="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,47 +31,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#podcast">Podcast</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <ul class="navbar-nav ms-auto" id="navbar-links"></ul>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <header
-      id="Home"
-      class="hero-section d-flex align-items-center justify-content-center"
-    >
-      <!-- Particles Background -->
+    <header id="Home" class="hero-section d-flex align-items-center justify-content-center">
       <div id="particles-js"></div>
-      <!-- Hero Content -->
       <div class="hero-content container text-center">
-        <h1 class="display-4">Dumpala Sai Avinash</h1>
-        <p class="lead">Software Engineer | Gen AI Innovator</p>
-        <a href="Sai Avinash.pdf" class="btn btn-primary btn-lg" download>
+        <h1 id="hero-name" class="display-4"></h1>
+        <p id="hero-role" class="lead"></p>
+        <a id="hero-resume" href="" class="btn btn-primary btn-lg" download>
           Download Resume
         </a>
       </div>
-      <!-- Scroll Indicator -->
       <div class="scroll-indicator">
         <i class="fa fa-angle-down"></i>
       </div>
@@ -80,7 +54,7 @@
     <!-- About Section -->
     <section id="about" class="py-5">
       <div class="container">
-        <h2 class="mb-4">About Me</h2>
+        <h2 id="about-heading" class="mb-4"></h2>
         <div class="row">
           <div class="col-md-4">
             <img
@@ -90,18 +64,7 @@
             />
           </div>
           <div class="col-md-8">
-            <p>
-              Hello! I'm Dumpala Sai Avinash, a passionate Software Engineer working
-              on cutting-edge generative AI projects. I enjoy solving complex
-              problems with innovative solutions. My background spans AI-powered
-              chatbots, intelligent IoT solutions, and leading teams on groundbreaking
-              projects.
-            </p>
-            <p>
-              I have authored two books and produced a popular podcast, reflecting my
-              commitment to creativity and diverse interests. Please explore my
-              portfolio to learn more about my journey, skills, and accomplishments.
-            </p>
+            <p id="about-content"></p>
           </div>
         </div>
       </div>
@@ -110,144 +73,31 @@
     <!-- Experience Section -->
     <section id="experience" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">Experience</h2>
-        <div class="timeline">
-          <!-- Tridiagonal Solutions -->
-          <div class="timeline-item">
-            <span class="timeline-date">July 2023 — Present</span>
-            <h4>Solution Architect | Tridiagonal Solutions, Pune</h4>
-            <p>
-              <strong>Avatar-based Chat using LLMs:</strong> Developed software that takes
-              user voice input, converts it to text, and responds via a real-time 3D avatar
-              service. Integrated Google Speech, Azure Speech Services, and GPT-4 for
-              domain-specific queries.<br />
-              <strong>Insyte-O (Gen AI Maintenance Management):</strong> Led a team of five
-              to build an intelligent maintenance system leveraging AWS Bedrock, Claude,
-              AWS Neptune, and more to automate maintenance requests and planning.
-            </p>
-          </div>
-
-          <!-- Youngsoft India -->
-          <div class="timeline-item">
-            <span class="timeline-date">July 2021 — July 2023</span>
-            <h4>Software Engineer | Youngsoft India Pvt. Ltd., Hyderabad</h4>
-            <p>
-              <strong>WPE (Work Posture Assessment):</strong> Implemented Python algorithms
-              using OpenCV and Numpy to calculate ergonomic scores from video inputs,
-              hosted on AWS.<br />
-              <strong>MFGIIOT (Manufacturing Intelligent IoT):</strong> Designed automation
-              solutions for real-time data collection and analytics using AWS Quicksight,
-              DynamoDB, S3, IoT Sitewise, and Ignition.
-            </p>
-          </div>
-
-          <!-- Internships -->
-          <div class="timeline-item">
-            <span class="timeline-date">2019 — 2021</span>
-            <h4>Internships</h4>
-            <p>
-              <strong>Software Engineer Intern | Youngsoft India (Jan 2021 — Jun 2021):</strong>
-              Worked on a Databricks POC for smart manufacturing and data processing.<br />
-              <strong>Software Engineer Intern | Happy Adda Studios (Sep 2019 — Apr 2020):</strong>
-              Created an educational application for government schools in Andhra Pradesh,
-              recognized by UNESCO’s TECH2019.<br />
-              <strong>Windows App Developer Intern | Skillveri (May 2019 — Jul 2019):</strong>
-              Built an inventory management system using Visual C#, MySQL, and WPF.
-            </p>
-          </div>
-        </div>
+        <h2 id="experience-heading" class="mb-4"></h2>
+        <div class="timeline" id="experience-container"></div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5">
       <div class="container">
-        <h2 class="mb-4">Projects</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <!-- Avatar-based Chat -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Avatar-based Chat using LLMs</h5>
-                <p class="card-text">
-                  A system integrating a real-time 3D avatar service with speech-to-text
-                  conversion and GPT-4 on domain-specific data, enabling an interactive
-                  conversation experience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Insyte-O -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Insyte-O (Gen AI-based Maintenance Management)
-                </h5>
-                <p class="card-text">
-                  Led a team of five to develop an intelligent maintenance management
-                  solution for automating requests, work orders, and planning in
-                  manufacturing, leveraging AWS Bedrock, Claude, AWS Neptune, and more.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- WPE -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">WPE (Work Posture Assessment)</h5>
-                <p class="card-text">
-                  Developed software that calculates ergonomic scores from video inputs,
-                  using Python, OpenCV, and AWS to analyze angles between joints for a
-                  physiotherapist-approved posture score.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- MFGIIOT -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">MFGIIOT (Manufacturing Intelligent IoT)</h5>
-                <p class="card-text">
-                  Implemented real-time data collection and analytics for manufacturing
-                  plants using AWS Quicksight, DynamoDB, S3, AWS IoT Sitewise, Ignition,
-                  and MQTT to drive smarter shopfloor monitoring.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2 id="projects-heading" class="mb-4"></h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="projects-container"></div>
       </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">Skills</h2>
+        <h2 id="skills-heading" class="mb-4"></h2>
         <div class="row">
           <div class="col-md-6">
             <h5>Languages</h5>
-            <ul>
-              <li>Python</li>
-              <li>C</li>
-              <li>Visual C#</li>
-            </ul>
+            <ul id="skills-languages"></ul>
           </div>
           <div class="col-md-6">
             <h5>Frameworks & Tools</h5>
-            <ul>
-              <li>Flask, Streamlit, Django</li>
-              <li>HTML, CSS, JavaScript</li>
-              <li>OpenAI, LLMs, OpenCV, Numpy</li>
-              <li>Databricks, Snowflake, Sklearn</li>
-              <li>
-                AWS (Bedrock, EC2, Lambda, Quicksight, Glue, Athena, S3, IoT)
-              </li>
-              <li>Azure Services</li>
-              <li>Git, Docker, ML Ops, WPF</li>
-            </ul>
+            <ul id="skills-tools"></ul>
           </div>
         </div>
       </div>
@@ -256,34 +106,15 @@
     <!-- Education & Certifications Section -->
     <section id="education" class="py-5">
       <div class="container">
-        <h2 class="mb-4">Education & Certifications</h2>
+        <h2 id="education-heading" class="mb-4"></h2>
         <div class="row">
           <div class="col-md-6">
             <h5>Education</h5>
-            <p>
-              <strong>Bachelor of Technology in Computer Sciences</strong><br />
-              Indian Institute of Information Technology, Sri City (2021)
-            </p>
-            <p>
-              <strong>Class XII</strong><br />
-              Sri Chaitanya Junior College, Visakhapatnam (2017)
-            </p>
-            <p>
-              <strong>Class X</strong><br />
-              Geethanjali School, Srikakulam (2015)
-            </p>
+            <div id="education-education"></div>
           </div>
           <div class="col-md-6">
             <h5>Certifications</h5>
-            <ul>
-              <li>Ignition 8.1 Certified - 2022</li>
-              <li>AWS QuickSight, Athena, S3 - 2021</li>
-              <li>
-                Apache Spark 3 - Spark Programming in Python - 2021
-              </li>
-              <li>Google IT Support Certificate - 2020</li>
-              <li>Machine Learning from Stanford Online - 2020</li>
-            </ul>
+            <ul id="education-certifications"></ul>
           </div>
         </div>
       </div>
@@ -292,60 +123,22 @@
     <!-- Books Section -->
     <section id="books" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">Books</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Facade of Shadows</h5>
-                <p class="card-text">
-                  An intriguing journey through mysterious narratives.
-                </p>
-                <a
-                  href="https://amzn.in/d/abftMCV"
-                  class="btn btn-outline-primary"
-                  target="_blank"
-                  >View on Amazon</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">The Tapestry of Life</h5>
-                <p class="card-text">
-                  Explore the intricate patterns of life through storytelling.
-                </p>
-                <a
-                  href="https://amzn.in/d/4WaZWIl"
-                  class="btn btn-outline-primary"
-                  target="_blank"
-                  >View on Amazon</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2 id="books-heading" class="mb-4"></h2>
+        <div class="row" id="books-container"></div>
       </div>
     </section>
 
     <!-- Podcast Section -->
     <section id="podcast" class="py-5">
       <div class="container">
-        <h2 class="mb-4">Podcast</h2>
+        <h2 id="podcast-heading" class="mb-4"></h2>
         <div class="card">
           <div class="card-body text-center">
-            <h5 class="card-title">Chandamama Kathalu Telugu</h5>
-            <p class="card-text">
-              I produced this popular podcast, available on all major platforms.
-            </p>
-            <a
-              href="https://open.spotify.com/show/3msJFxPAowJuoBfxfaqXQj?si=4373b752cff545ef"
-              class="btn btn-success"
-              target="_blank"
-              >Listen on Spotify</a
-            >
+            <h5 id="podcast-title" class="card-title"></h5>
+            <p id="podcast-description" class="card-text"></p>
+            <a id="podcast-link" href="" class="btn btn-success" target="_blank">
+              Listen on Spotify
+            </a>
           </div>
         </div>
       </div>
@@ -354,33 +147,26 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">Contact Me</h2>
+        <h2 id="contact-heading" class="mb-4"></h2>
         <div class="row">
           <div class="col-md-6">
             <p>
               <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:dumpalasaiavinash@gmail.com"
-                >dumpalasaiavinash@gmail.com</a
-              >
+              <a id="contact-email" href=""></a>
             </p>
             <p>
-              <i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India
+              <i class="fa-solid fa-location-dot"></i>
+              <span id="contact-location"></span>
             </p>
             <p>
               <i class="fa-brands fa-linkedin"></i>
-              <a
-                href="https://www.linkedin.com/in/dumpala-saiavinash/"
-                target="_blank"
-                >LinkedIn Profile</a
-              >
+              <a id="contact-linkedin" href="" target="_blank"></a>
             </p>
             <p class="text-muted">
-              *The form on the right is for demonstration only; it does not currently
-              send messages.*
+              *The form on the right is for demonstration only; it does not currently send messages.*
             </p>
           </div>
           <div class="col-md-6">
-            <!-- Form with AJAX implementation -->
             <form id="contactForm">
               <input
                 type="hidden"
@@ -424,7 +210,6 @@
                 Send Message
               </button>
             </form>
-            <!-- Success Message -->
             <div
               id="formResponse"
               style="display:none; color: green; font-weight: bold;"
@@ -469,19 +254,14 @@
     <footer class="py-4 bg-dark text-white text-center">
       <div class="container">
         <p class="mb-0">
-          &copy; 2025 Dumpala Sai Avinash. All Rights Reserved.
+          &copy; <span id="footer-year"></span> <span id="footer-name"></span>. All
+          Rights Reserved.
         </p>
         <div class="social-links">
-          <a
-            href="https://github.com/dumpalasaiavinash"
-            class="text-white me-2"
-            target="_blank"
+          <a id="footer-github" href="" class="text-white me-2" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
-          <a
-            href="https://www.linkedin.com/in/dumpala-saiavinash/"
-            class="text-white"
-            target="_blank"
+          <a id="footer-linkedin" href="" class="text-white" target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
         </div>
@@ -609,6 +389,200 @@
         } else {
           header.classList.remove("scrolled");
         }
+      });
+    </script>
+    <!-- Config Loader Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("config.json")
+          .then((response) => response.json())
+          .then((config) => {
+            // Set document title
+            document.title = config.title || "Portfolio";
+
+            // Navbar
+            document.getElementById("navbar-brand").innerText =
+              config.navbar.brand;
+            const navbarLinks = document.getElementById("navbar-links");
+            navbarLinks.innerHTML = "";
+            config.navbar.links.forEach((link) => {
+              const li = document.createElement("li");
+              li.className = "nav-item";
+              const a = document.createElement("a");
+              a.className = "nav-link";
+              a.href = link.href;
+              a.innerText = link.text;
+              li.appendChild(a);
+              navbarLinks.appendChild(li);
+            });
+
+            // Hero Section
+            document.getElementById("hero-name").innerText =
+              config.hero.name;
+            document.getElementById("hero-role").innerText =
+              config.hero.role;
+            const heroResume = document.getElementById("hero-resume");
+            heroResume.href = config.hero.resume;
+            heroResume.setAttribute("download", config.hero.resume);
+
+            // About Section
+            document.getElementById("about-heading").innerText =
+              config.about.heading;
+            document.getElementById("about-content").innerText =
+              config.about.content;
+
+            // Experience Section
+            document.getElementById("experience-heading").innerText =
+              config.experience.heading;
+            const expContainer = document.getElementById("experience-container");
+            expContainer.innerHTML = "";
+            config.experience.items.forEach((item) => {
+              const div = document.createElement("div");
+              div.className = "timeline-item";
+              const dateSpan = document.createElement("span");
+              dateSpan.className = "timeline-date";
+              dateSpan.innerText = item.date;
+              const titleElem = document.createElement("h4");
+              titleElem.innerText = item.title;
+              const para = document.createElement("p");
+              para.innerHTML = item.description;
+              div.appendChild(dateSpan);
+              div.appendChild(titleElem);
+              div.appendChild(para);
+              expContainer.appendChild(div);
+            });
+
+            // Projects Section
+            document.getElementById("projects-heading").innerText =
+              config.projects.heading;
+            const projectsContainer =
+              document.getElementById("projects-container");
+            projectsContainer.innerHTML = "";
+            config.projects.items.forEach((item) => {
+              const colDiv = document.createElement("div");
+              colDiv.className = "col";
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "card h-100";
+              const cardBody = document.createElement("div");
+              cardBody.className = "card-body";
+              const cardTitle = document.createElement("h5");
+              cardTitle.className = "card-title";
+              cardTitle.innerText = item.title;
+              const cardText = document.createElement("p");
+              cardText.className = "card-text";
+              cardText.innerText = item.description;
+              cardBody.appendChild(cardTitle);
+              cardBody.appendChild(cardText);
+              cardDiv.appendChild(cardBody);
+              colDiv.appendChild(cardDiv);
+              projectsContainer.appendChild(colDiv);
+            });
+
+            // Skills Section
+            document.getElementById("skills-heading").innerText =
+              config.skills.heading;
+            const skillsLanguages = document.getElementById("skills-languages");
+            skillsLanguages.innerHTML = "";
+            config.skills.languages.forEach((lang) => {
+              const li = document.createElement("li");
+              li.innerText = lang;
+              skillsLanguages.appendChild(li);
+            });
+            const skillsTools = document.getElementById("skills-tools");
+            skillsTools.innerHTML = "";
+            config.skills.tools.forEach((tool) => {
+              const li = document.createElement("li");
+              li.innerText = tool;
+              skillsTools.appendChild(li);
+            });
+
+            // Education Section
+            document.getElementById("education-heading").innerText =
+              config.education.heading;
+            const eduContainer =
+              document.getElementById("education-education");
+            eduContainer.innerHTML = "";
+            config.education.education.forEach((edu) => {
+              const p = document.createElement("p");
+              p.innerHTML = `<strong>${edu.degree}</strong><br />${edu.institution} (${edu.year})`;
+              eduContainer.appendChild(p);
+            });
+            const certList = document.getElementById("education-certifications");
+            certList.innerHTML = "";
+            config.education.certifications.forEach((cert) => {
+              const li = document.createElement("li");
+              li.innerText = cert;
+              certList.appendChild(li);
+            });
+
+            // Books Section
+            document.getElementById("books-heading").innerText =
+              config.books.heading;
+            const booksContainer =
+              document.getElementById("books-container");
+            booksContainer.innerHTML = "";
+            config.books.items.forEach((book) => {
+              const colDiv = document.createElement("div");
+              colDiv.className = "col-md-6";
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "card mb-3";
+              const cardBody = document.createElement("div");
+              cardBody.className = "card-body";
+              const cardTitle = document.createElement("h5");
+              cardTitle.className = "card-title";
+              cardTitle.innerText = book.title;
+              const cardText = document.createElement("p");
+              cardText.className = "card-text";
+              cardText.innerText = book.description;
+              const bookLink = document.createElement("a");
+              bookLink.href = book.amazon;
+              bookLink.className = "btn btn-outline-primary";
+              bookLink.target = "_blank";
+              bookLink.innerText = "View on Amazon";
+              cardBody.appendChild(cardTitle);
+              cardBody.appendChild(cardText);
+              cardBody.appendChild(bookLink);
+              cardDiv.appendChild(cardBody);
+              colDiv.appendChild(cardDiv);
+              booksContainer.appendChild(colDiv);
+            });
+
+            // Podcast Section
+            document.getElementById("podcast-heading").innerText =
+              config.podcast.heading;
+            document.getElementById("podcast-title").innerText =
+              config.podcast.title;
+            document.getElementById("podcast-description").innerText =
+              config.podcast.description;
+            const podcastLink = document.getElementById("podcast-link");
+            podcastLink.href = config.podcast.spotify;
+
+            // Contact Section
+            document.getElementById("contact-heading").innerText =
+              config.contact.heading;
+            const contactEmail = document.getElementById("contact-email");
+            contactEmail.innerText = config.contact.email;
+            contactEmail.href = "mailto:" + config.contact.email;
+            document.getElementById("contact-location").innerText =
+              config.contact.location;
+            const contactLinkedin =
+              document.getElementById("contact-linkedin");
+            contactLinkedin.innerText = "LinkedIn Profile";
+            contactLinkedin.href = config.contact.linkedin;
+
+            // Footer
+            document.getElementById("footer-year").innerText =
+              new Date().getFullYear();
+            document.getElementById("footer-name").innerText =
+              config.hero.name;
+            const footerGithub =
+              document.getElementById("footer-github");
+            footerGithub.href = config.contact.github;
+            const footerLinkedin =
+              document.getElementById("footer-linkedin");
+            footerLinkedin.href = config.contact.linkedin;
+          })
+          .catch((error) => console.error("Error loading config:", error));
       });
     </script>
   </body>
