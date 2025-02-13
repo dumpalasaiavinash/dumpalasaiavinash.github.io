@@ -68,25 +68,13 @@
       "heading": "Skills",
       "languages": ["Python", "C", "Visual C#"],
       "tools": [
-        "Flask",
-        "Streamlit",
-        "Django",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "OpenAI",
-        "LLMs",
-        "OpenCV",
-        "Numpy",
-        "Databricks",
-        "Snowflake",
-        "Sklearn",
-        "AWS",
-        "Azure Services",
-        "Git",
-        "Docker",
-        "ML Ops",
-        "WPF"
+        ["Flask", "Streamlit", "Django"],
+        ["HTML", "CSS", "JavaScript"],
+        ["OpenAI", "LLMs", "OpenCV", "Numpy"],
+        ["Databricks", "Snowflake", "Sklearn"],
+        ["AWS (Bedrock, EC2, Lambda, Quicksight, Glue, Athena, S3, IoT)"],
+        ["Azure Services"],
+        ["Git", "Docker", "ML Ops", "WPF"]
       ]
     },
     "education": {

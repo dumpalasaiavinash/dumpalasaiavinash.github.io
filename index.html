@@ -488,13 +488,16 @@
               li.innerText = lang;
               skillsLanguages.appendChild(li);
             });
+            // Skills Section - Tools
             const skillsTools = document.getElementById("skills-tools");
             skillsTools.innerHTML = "";
-            config.skills.tools.forEach((tool) => {
+            config.skills.tools.forEach((toolGroup) => {
               const li = document.createElement("li");
-              li.innerText = tool;
+              // Assuming toolGroup is an array of tools in this group
+              li.innerText = toolGroup.join(", ");
               skillsTools.appendChild(li);
             });
+
 
             // Education Section
             document.getElementById("education-heading").innerText =
