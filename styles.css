@@ -207,3 +207,22 @@ footer .social-links a {
   }
 }
 
+/* Override the Google Scheduling button to match Bootstrap's "btn-primary" style */
+.calendar-scheduling-button-container .calendar-scheduling-button {
+  /* Bootstrap primary button background/foreground */
+  background-color: #0d6efd !important; 
+  color: #fff !important;
+  
+  /* Adjust padding, border, radius, font, etc. as desired */
+  padding: 0.5rem 1rem !important;
+  border: none !important;
+  border-radius: 0.25rem !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  cursor: pointer !important;
+}
+
+.calendar-scheduling-button-container .calendar-scheduling-button:hover {
+  background-color: #0b5ed7 !important; /* typical Bootstrap hover shade */
+}
