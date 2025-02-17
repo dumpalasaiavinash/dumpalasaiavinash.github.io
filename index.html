@@ -168,7 +168,10 @@
             <p>
               <i class="fa-brands fa-linkedin"></i>
               <a id="contact-linkedin" href="" target="_blank"></a>
-            
+            </p>
+            <!-- Calendar button will load here -->
+            <div class="mt-3" id="calendar-button"></div>
+
           </div>
           <div class="col-md-6">
             <form id="contactForm">
@@ -249,27 +252,6 @@
                   }
                 });
             </script>
-
-            <!-- Google Calendar Appointment Scheduling begin -->
-            <div>
-              <script>
-                (function() {
-                  var target = document.currentScript;
-                  window.addEventListener('load', function() {
-                    calendar.schedulingButton.load({
-                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2n1zLLuDLEV_Y72DmjSgCLg_5psvHMNAwPEG2zIzLbl0rz-IUT2MTAklR5ihuGqdXkReN_fEhT?gv=true',
-                      color: '#039BE5',
-                      label: 'Book an appointment',
-                      target,
-                    });
-                  });
-                })();
-              </script>
-            </div>
-            <!-- end Google Calendar Appointment Scheduling -->
-
-
-
           </div>
         </div>
       </div>
@@ -601,6 +583,25 @@
               document.getElementById("contact-linkedin");
             contactLinkedin.innerText = "LinkedIn Profile";
             contactLinkedin.href = config.contact.linkedin;
+
+            // Calendar Button
+            if (config.contact.calendar) {
+              // Create a <script> that calls Google’s calendar.schedulingButton.load(...)
+              const calendarButtonDiv = document.getElementById("calendar-button");
+              const script = document.createElement("script");
+              script.innerHTML = `(function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                  calendar.schedulingButton.load({
+                    url: '${config.contact.calendar}',
+                    color: '#039BE5',
+                    label: 'Book an appointment',
+                    target,
+                  });
+                });
+              })();`;
+              calendarButtonDiv.appendChild(script);
+            }
 
             // Footer
             document.getElementById("footer-year").innerText =
