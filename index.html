@@ -169,8 +169,9 @@
               <i class="fa-brands fa-linkedin"></i>
               <a id="contact-linkedin" href="" target="_blank"></a>
             </p>
-            <!-- Calendar button will load here -->
-            <div class="mt-3" id="calendar-button"></div>
+             <!-- Calendar button will appear here -->
+            <div class="mt-4" id="calendar-button"></div>
+            <script id="calendar-script"></script>
 
           </div>
           <div class="col-md-6">
@@ -584,23 +585,24 @@
             contactLinkedin.innerText = "LinkedIn Profile";
             contactLinkedin.href = config.contact.linkedin;
 
-            // Calendar Button
+            // (1) Check if we have a calendar link in config
             if (config.contact.calendar) {
-              // Create a <script> that calls Google’s calendar.schedulingButton.load(...)
-              const calendarButtonDiv = document.getElementById("calendar-button");
-              const script = document.createElement("script");
-              script.innerHTML = `(function() {
-                var target = document.currentScript;
-                window.addEventListener('load', function() {
-                  calendar.schedulingButton.load({
-                    url: '${config.contact.calendar}',
-                    color: '#039BE5',
-                    label: 'Book an appointment',
-                    target,
+              // (2) Put the necessary <script> content into the #calendar-script element
+              const calendarScript = document.getElementById("calendar-script");
+              calendarScript.textContent = `
+                (function() {
+                  window.addEventListener('load', function() {
+                    // "target" is our calendar-button <div>
+                    const target = document.getElementById('calendar-button');
+                    calendar.schedulingButton.load({
+                      url: '${config.contact.calendar}',
+                      color: '#039BE5',
+                      label: 'Book an appointment',
+                      target: target
+                    });
                   });
-                });
-              })();`;
-              calendarButtonDiv.appendChild(script);
+                })();
+              `;
             }
 
             // Footer
