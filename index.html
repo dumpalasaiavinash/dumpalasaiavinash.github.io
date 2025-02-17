@@ -17,6 +17,11 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Calendar Appointment Scheduling CSS & Script -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
   </head>
   <body>
     <!-- Modernized Header (Navbar) -->
@@ -244,6 +249,27 @@
                   }
                 });
             </script>
+
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <div>
+              <script>
+                (function() {
+                  var target = document.currentScript;
+                  window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2n1zLLuDLEV_Y72DmjSgCLg_5psvHMNAwPEG2zIzLbl0rz-IUT2MTAklR5ihuGqdXkReN_fEhT?gv=true',
+                      color: '#039BE5',
+                      label: 'Book an appointment',
+                      target,
+                    });
+                  });
+                })();
+              </script>
+            </div>
+            <!-- end Google Calendar Appointment Scheduling -->
+
+
+
           </div>
         </div>
       </div>
