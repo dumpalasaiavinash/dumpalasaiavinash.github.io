@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dumpalasaiavinash.github.io/sitemap.xml
