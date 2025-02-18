@@ -34,7 +34,7 @@
         {
           "date": "July 2021 — July 2023",
           "title": "Software Engineer | Youngsoft India Pvt. Ltd., Hyderabad",
-          "description": "WPE (Work Posture Assessment): Developed a software that calculates ergonomic scores from video footage. Implemented joint angle analysis and scoring based on physiotherapist-recommended values, leveraging AWS for cloud processing<br /><br />MFGIIOT (Manufacturing Intelligent IoT): Designed automation solutions for real-time data collection and analytics using AWS Quicksight, DynamoDB, S3, IoT Sitewise, and Ignition."
+          "description": "WPE (Work Posture Assessment): Implemented Python algorithms using OpenCV and Numpy to calculate ergonomic scores from video inputs, hosted on AWS.<br /><br />MFGIIOT (Manufacturing Intelligent IoT): Designed automation solutions for real-time data collection and analytics using AWS Quicksight, DynamoDB, S3, IoT Sitewise, and Ignition."
         },
         {
           "date": "2019 — 2021",
@@ -48,23 +48,19 @@
       "items": [
         {
           "title": "Avatar-based Chat using LLMs",
-          "description": "A system integrating a real-time 3D avatar service with speech-to-text conversion and GPT-4 on domain-specific data, enabling an interactive conversation experience.",
-          "image": "images/chatbot.jpeg"
+          "description": "A system integrating a real-time 3D avatar service with speech-to-text conversion and GPT-4 on domain-specific data, enabling an interactive conversation experience."
         },
         {
           "title": "Insyte-O (Gen AI-based Maintenance Management)",
-          "description": "Led a team of five to develop an intelligent maintenance management solution for automating requests, work orders, and planning in manufacturing, leveraging AWS Bedrock, Claude, AWS Neptune, and more.",
-          "image": "images/mfg.jpeg"
+          "description": "Led a team of five to develop an intelligent maintenance management solution for automating requests, work orders, and planning in manufacturing, leveraging AWS Bedrock, Claude, AWS Neptune, and more."
         },
         {
           "title": "WPE (Work Posture Assessment)",
-          "description": "Developed software that calculates ergonomic scores from video inputs, using Python, OpenCV, and AWS to analyze angles between joints for a physiotherapist-approved posture score.",
-          "image": "images/wpe.jpeg"
+          "description": "Developed software that calculates ergonomic scores from video inputs, using Python, OpenCV, and AWS to analyze angles between joints for a physiotherapist-approved posture score."
         },
         {
           "title": "MFGIIOT (Manufacturing Intelligent IoT)",
-          "description": "Implemented real-time data collection and analytics for manufacturing plants using AWS Quicksight, DynamoDB, S3, AWS IoT Sitewise, Ignition, and MQTT to drive smarter shopfloor monitoring.",
-          "image": "images/mfiot.jpeg"
+          "description": "Implemented real-time data collection and analytics for manufacturing plants using AWS Quicksight, DynamoDB, S3, AWS IoT Sitewise, Ignition, and MQTT to drive smarter shopfloor monitoring."
         }
       ]
     },
@@ -138,3 +134,4 @@
       "calendar": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2n1zLLuDLEV_Y72DmjSgCLg_5psvHMNAwPEG2zIzLbl0rz-IUT2MTAklR5ihuGqdXkReN_fEhT?gv=true"
     }
   }
+  

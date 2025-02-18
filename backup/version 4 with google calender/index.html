@@ -48,10 +48,12 @@
       <div class="hero-content container text-center">
         <h1 id="hero-name" class="display-4"></h1>
         <p id="hero-role" class="lead"></p>
-        <!-- Removed download resume button -->
+        <a id="hero-resume" href="" class="btn btn-primary btn-lg" download>
+          Download Resume
+        </a>
       </div>
       <div class="scroll-indicator">
-        <a href="#about" style="color: #fff"><i class="fa fa-angle-down"></i></a> <!-- Link to the next section -->
+        <i class="fa fa-angle-down"></i>
       </div>
     </header>
 
@@ -84,22 +86,10 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="py-5">
       <div class="container">
-        <h2 id="projects-heading" class="mb-4 text-center"></h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4" id="projects-container">
-          <!-- Example project card -->
-          <div class="col">
-            <div class="card project-card h-100">
-              <img src="project-image.jpg" class="card-img-top" alt="Project Image">
-              <div class="card-body project-card-body">
-                <h5 class="card-title project-card-title">Project Title</h5>
-                <p class="card-text project-card-text">Project description goes here.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2 id="projects-heading" class="mb-4"></h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="projects-container"></div>
       </div>
     </section>
 
@@ -154,7 +144,7 @@
             <h5 id="podcast-title" class="card-title"></h5>
             <p id="podcast-description" class="card-text"></p>
             <a id="podcast-link" href="" class="btn btn-success" target="_blank">
-              Listen on <i class="fab fa-spotify"></i> <!-- Spotify logo -->
+              Listen on Spotify
             </a>
           </div>
         </div>
@@ -439,6 +429,9 @@
               config.hero.name;
             document.getElementById("hero-role").innerText =
               config.hero.role;
+            const heroResume = document.getElementById("hero-resume");
+            heroResume.href = config.hero.resume;
+            heroResume.setAttribute("download", config.hero.resume);
 
             // About Section
             document.getElementById("about-heading").innerText =
@@ -477,27 +470,17 @@
               const colDiv = document.createElement("div");
               colDiv.className = "col";
               const cardDiv = document.createElement("div");
-              cardDiv.className = "card project-card h-100";
-              const img = document.createElement("img");
-              img.className = "card-img-top";
-              img.src = item.image || "default-project-image.jpg"; // Add image URL from config or use a default image
-              img.alt = item.title;
+              cardDiv.className = "card h-100";
               const cardBody = document.createElement("div");
-              cardBody.className = "card-body project-card-body";
+              cardBody.className = "card-body";
               const cardTitle = document.createElement("h5");
-              cardTitle.className = "card-title project-card-title";
+              cardTitle.className = "card-title";
               cardTitle.innerText = item.title;
               const cardText = document.createElement("p");
-              cardText.className = "card-text project-card-text";
+              cardText.className = "card-text";
               cardText.innerText = item.description;
-              // const learnMoreLink = document.createElement("a");
-              // learnMoreLink.href = item.link || "#"; // Add link URL from config or use a placeholder
-              // learnMoreLink.className = "btn btn-primary";
-              // learnMoreLink.innerText = "Learn More";
               cardBody.appendChild(cardTitle);
               cardBody.appendChild(cardText);
-              // cardBody.appendChild(learnMoreLink);
-              cardDiv.appendChild(img);
               cardDiv.appendChild(cardBody);
               colDiv.appendChild(cardDiv);
               projectsContainer.appendChild(colDiv);
@@ -534,10 +517,11 @@
             const eduContainer =
               document.getElementById("education-education");
             eduContainer.innerHTML = "";
-            const latestEdu = config.education.education[0];
-            const p = document.createElement("p");
-            p.innerHTML = `<strong>${latestEdu.degree}</strong><br />${latestEdu.institution} (${latestEdu.year})`;
-            eduContainer.appendChild(p);
+            config.education.education.forEach((edu) => {
+              const p = document.createElement("p");
+              p.innerHTML = `<strong>${edu.degree}</strong><br />${edu.institution} (${edu.year})`;
+              eduContainer.appendChild(p);
+            });
             const certList = document.getElementById("education-certifications");
             certList.innerHTML = "";
             config.education.certifications.forEach((cert) => {
