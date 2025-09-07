@@ -74,11 +74,13 @@
       "tools": [
         ["Flask", "Streamlit", "Django"],
         ["HTML", "CSS", "JavaScript"],
-        ["OpenAI", "LLMs", "OpenCV", "Numpy"],
-        ["Databricks", "Snowflake", "Sklearn"],
-        ["AWS (Bedrock, EC2, Lambda, Quicksight, Glue, Athena, S3, IoT)"],
-        ["Azure Services"],
-        ["Git", "Docker", "ML Ops", "WPF"]
+        ["OpenAI", "LLMs", "LangChain", "LangGraph"],
+        ["OpenCV", "Sklearn", "Numpy"],
+        ["Databricks", "Snowflake"],
+        ["AWS (Bedrock, EC2, Lambda, Quicksight, Glue, Athena, S3, IoT, IoT Sitewise, Cognito, OpenSearch)"],
+        ["Azure (Database Services, Analytics, Speech Services)"],
+        ["Git", "Docker", "ML Ops", "WPF"],
+        ["3D Avatar Service Integration", "Business Intelligence Tools", "Cloud Computing", "Machine Learning", "Data Analytics"]
       ]
     },
     "education": {
