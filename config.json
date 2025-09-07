@@ -29,7 +29,7 @@
         {
           "date": "July 2023 — Present",
           "title": "Sr. Gen-AI Engineer/Solution Architect | Tridiagonal Solutions, Pune",
-          "description": "<b>OpsEdge</b>: Led development of a multi-agent solution for anomaly detection, root cause analysis (RCA), notifications, and work orders in manufacturing plants, leveraging Python, Neo4j, AWS Bedrock, Claude, LangGraph, and Flask.<br /><br /> Avatar-based Chat using LLMs: Developed software that takes user voice input, converts it to text, and responds via a real-time 3D avatar service. Integrated Google Speech, Azure Speech Services, and GPT-4 for domain-specific queries.<br /><br />Insyte-O (Gen AI Maintenance Management): Led a team of five to build an intelligent maintenance system leveraging AWS Bedrock, Claude, AWS Neptune, and more to automate maintenance requests and planning."
+          "description": "<i>OpsEdge</i>: Led development of a multi-agent solution for anomaly detection, root cause analysis (RCA), notifications, and work orders in manufacturing plants, leveraging Python, Neo4j, AWS Bedrock, Claude, LangGraph, and Flask.<br /><br /> <i>Avatar-based Chat using LLMs:</i> Developed software that takes user voice input, converts it to text, and responds via a real-time 3D avatar service. Integrated Google Speech, Azure Speech Services, and GPT-4 for domain-specific queries.<br /><br /><i>Insyte-O (Gen AI Maintenance Management):</i> Led a team of five to build an intelligent maintenance system leveraging AWS Bedrock, Claude, AWS Neptune, and more to automate maintenance requests and planning."
         },
         {
           "date": "July 2021 — July 2023",
