@@ -54,26 +54,7 @@
       ]
     },
 
-    // "experience": {
-    //   "heading": "Experience",
-    //   "items": [
-    //     {
-    //       "date": "July 2023 — Present",
-    //       "title": "Sr. Gen-AI Engineer/Solution Architect | Tridiagonal Solutions, Pune",
-    //       "description": "Avatar-based Chat using LLMs: Developed software that takes user voice input, converts it to text, and responds via a real-time 3D avatar service. Integrated Google Speech, Azure Speech Services, and GPT-4 for domain-specific queries.<br /><br />Insyte-O (Gen AI Maintenance Management): Led a team of five to build an intelligent maintenance system leveraging AWS Bedrock, Claude, AWS Neptune, and more to automate maintenance requests and planning."
-    //     },
-    //     {
-    //       "date": "July 2021 — July 2023",
-    //       "title": "Software Engineer | Youngsoft India Pvt. Ltd., Hyderabad",
-    //       "description": "WPE (Work Posture Assessment): Developed a software that calculates ergonomic scores from video footage. Implemented joint angle analysis and scoring based on physiotherapist-recommended values, leveraging AWS for cloud processing<br /><br />MFGIIOT (Manufacturing Intelligent IoT): Designed automation solutions for real-time data collection and analytics using AWS Quicksight, DynamoDB, S3, IoT Sitewise, and Ignition."
-    //     },
-    //     {
-    //       "date": "2019 — 2021",
-    //       "title": "Internships",
-    //       "description": "Software Engineer Intern at Youngsoft India (Jan 2021 — Jun 2021): Worked on a Databricks POC for smart manufacturing and data processing.<br /><br />Software Engineer Intern at Happy Adda Studios (Sep 2019 — Apr 2020): Created an educational application for government schools in Andhra Pradesh, recognized by UNESCO’s TECH2019.<br /><br />Windows App Developer Intern at Skillveri (May 2019 — Jul 2019): Built an inventory management system using Visual C#, MySQL, and WPF."
-    //     }
-    //   ]
-    // },
+   
     "projects": {
       "heading": "Projects",
       "items": [
