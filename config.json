@@ -57,7 +57,7 @@
           "image": "images/mfg.jpeg"
         },
         {
-          "title": "WPE (Work Posture Assessment)",
+          "title": "WPE (Work Posture Evaluation)",
           "description": "Developed software that calculates ergonomic scores from video inputs, using Python, OpenCV, and AWS to analyze angles between joints for a physiotherapist-approved posture score.",
           "image": "images/wpe.jpeg"
         },
